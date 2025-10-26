@@ -39,11 +39,11 @@
             <span class="material-symbols-outlined"> account_circle </span>
             <h3>About</h3>
           </a>
-          <a href="#">
+          <a href="#targetDivProject">
             <span class="material-symbols-outlined"> assignment </span>
             <h3>Projects</h3>
           </a>
-          <a href="#">
+          <a href="#targetDivContact">
             <span class="material-symbols-outlined"> call_quality </span>
             <h3>Contact</h3>
           </a>
@@ -52,7 +52,82 @@
       <!------------End of Aside------------->
 
       <main>
-        <div class="hero"></div>
+        <div class="hero-container">
+          <!-- Left Content -->
+          <div class="hero-content">
+            <h1 class="hero-title">Trần Tiến Đạt</h1>
+            <p class="hero-subtitle">ナル - Nippon Style Agile Leader</p>
+            <p class="hero-description">
+              Transforming organizations through innovative agile methodologies
+              and Japanese business philosophy.
+            </p>
+            <div class="accent-line"></div>
+            <button class="hire-btn" id="scrollToDivProject">View my Project</button>
+          </div>
+
+          <!-- Right Content - Avatar -->
+          <div class="avatar-container">
+            <div class="avatar-circle">
+              <img src="assets/avatar.jpg" alt="Trần Tiến Đạt" />
+            </div>
+          </div>
+        </div>
+
+        <div class="projects" id="targetDivProject">
+          <h1>Projects</h1>
+          <div class="project">
+            <div class="project-title">
+              <div class="p1">
+                <span class="material-symbols-outlined">
+                  delivery_truck_speed
+                </span>
+              </div>
+              <h2>Shipping service for everyone</h2>
+            </div>
+            <p>
+              This is a delivery service system with 3 roles (admin, customer,
+              delivery person). The system allows users to book delivery
+              service, calculate distance to address and manage delivery person.
+              The system uses MVC (Model-View-Controller) software architecture
+              model and developed according to WaterFall process.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <div class="p2">
+                <span class="material-symbols-outlined"> globe_book </span>
+              </div>
+              <h2>
+                Applying AI to personalize Japanese learning for FPT students
+              </h2>
+            </div>
+            <p>
+              This is a course management system with integrated AI to support
+              learners with 5 main roles (Guest, Student, Staff, Manager,
+              Admin). The system acts as a tool to support learners with main
+              functions such as consulting on learning paths, correcting tests,
+              answering questions about learning materials and Q&A. The system
+              is developed according to the Iterative Process.
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <div class="p3">
+                <span class="material-symbols-outlined"> point_of_sale </span>
+              </div>
+              <h2>Sell ​​digital accounts</h2>
+            </div>
+            <p>
+              This is a project for everyone to buy or sell digital accounts.
+              With 3 main roles (Admin, Customer, Seller), the system supports
+              users to buy and sell with anti-scam functions. The system is
+              developed according to the Iterative Process.
+            </p>
+          </div>
+        </div>
+        <div class="contact" id="targetDivContact">
+          <h1>Contact</h1>
+        </div>
       </main>
 
       <div class="right">
@@ -67,7 +142,7 @@
         </div>
         <div class="profile">
           <div class="items">
-            <h2>Trần Tiến Đạt</h2>
+            <h2>Information & Contact</h2>
             <div class="item">
               <span class="material-symbols-outlined"> calendar_month </span>
               <h3>13/06/2003</h3>
