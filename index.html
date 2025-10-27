@@ -127,6 +127,26 @@
         </div>
         <div class="contact" id="targetDivContact">
           <h1>Contact</h1>
+          <form action="" method="POST" class="form" id="form-1">
+            <h3 class="heading">Contact with Me :3</h3>
+            <div class="spacer"></div>
+            <div class="form-group">
+              <label for="fullname" class="form-label">Tên đầy đủ</label>
+              <input type="text" id="fullname" class="fullname" placeholder="VD: Trần Tiến Đạt">
+              <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" id="email" class="email" placeholder="VD: Dattt130623@gmail.com">
+              <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <input type="text" id="message" class="message">
+              <span class="form-message"></span>
+            </div>
+            <button class="form-submit">Gửi liên hệ</button>
+          </form>
         </div>
       </main>
 
@@ -142,7 +162,7 @@
         </div>
         <div class="profile">
           <div class="items">
-            <h2>Information & Contact</h2>
+            <h2>Information</h2>
             <div class="item">
               <span class="material-symbols-outlined"> calendar_month </span>
               <h3>13/06/2003</h3>
@@ -182,5 +202,14 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script>
+      Validator({
+        form: '#form-1',
+        rules: [
+          Validator.isRequired('#fullname'),
+          Validator.isEmail('#email'),
+        ]
+      });
+    </script>
   </body>
 </html>
