@@ -67,6 +67,7 @@ function Validator(options) {
         var fullname = formElement.querySelector("#fullname").value;
         var email = formElement.querySelector("#email").value;
         var message = formElement.querySelector("#message").value;
+        var sendSuccess = document.querySelector(".form-message-send");
 
         var contactData = {
           fullname: fullname,
@@ -75,6 +76,10 @@ function Validator(options) {
         };
 
         localStorage.setItem("contactForm", JSON.stringify(contactData));
+
+        sendSuccess.innerText = "Cảm ơn đã liên hệ!";
+
+        formElement.reset();
       }
     };
 

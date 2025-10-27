@@ -35,18 +35,18 @@
 }
 
 .dark-theme-variables {
-  --color-primary: #8c9bff;          /* sáng hơn */
-  --color-danger: #ff5c5c;           /* đỏ đậm hơn */
-  --color-success: #2be69b;          /* xanh sáng */
-  --color-warning: #ffcc66;          /* vàng sáng */
-  --color-white: #1a1c20;            /* nền đen */
-  --color-dark: #f5f6fa;             /* chữ trắng sáng */
-  --color-dark-variant: #dcdde1;     /* chữ phụ sáng */
-  --color-info-dark: #a5b1c2;        /* ghi sáng */
-  --color-info-light: #3a3d45;       /* ghi tối */
+  --color-primary: #8c9bff; /* sáng hơn */
+  --color-danger: #ff5c5c; /* đỏ đậm hơn */
+  --color-success: #2be69b; /* xanh sáng */
+  --color-warning: #ffcc66; /* vàng sáng */
+  --color-white: #1a1c20; /* nền đen */
+  --color-dark: #f5f6fa; /* chữ trắng sáng */
+  --color-dark-variant: #dcdde1; /* chữ phụ sáng */
+  --color-info-dark: #a5b1c2; /* ghi sáng */
+  --color-info-light: #3a3d45; /* ghi tối */
   --color-light: rgba(255, 255, 255, 0.12);
-  --color-primary-variant: #b0b7ff;  /* xanh nhạt */
-  --color-backround: #0f1115;        /* nền tổng thể đen */
+  --color-primary-variant: #b0b7ff; /* xanh nhạt */
+  --color-backround: #0f1115; /* nền tổng thể đen */
   --box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.6);
 }
 
@@ -81,10 +81,16 @@ img {
 h1 {
   font-weight: 800;
   font-size: 1.8rem;
+  color: var(--color-dark);
 }
 
 h3 {
   font-size: 0.87rem;
+  color: var(--color-dark);
+}
+
+h2 {
+  color: var(--color-dark);
 }
 
 .profile-photo {
@@ -276,6 +282,10 @@ main {
   display: flex;
 }
 
+.right .profile .items .item span{
+  color: var(--color-dark);
+}
+
 main {
   width: 900px;
   align-items: center;
@@ -333,7 +343,7 @@ main {
 .hire-btn {
   display: inline-block;
   background: var(--color-primary);
-  color:var(--color-white);
+  color: var(--color-white);
   padding: 0.875rem 2.5rem;
   border-radius: 50px;
   text-decoration: none;
@@ -390,7 +400,7 @@ main .projects .project {
   flex-direction: column;
 }
 
-main .projects .project:hover{
+main .projects .project:hover {
   box-shadow: var(--box-shadow);
 }
 
@@ -404,22 +414,22 @@ main .projects .project span {
   color: var(--color-warning);
 }
 
-main .projects .project h2{
+main .projects .project h2 {
   padding-top: 2.5rem;
   padding-left: 3rem;
 }
 
-main .projects .project p{
+main .projects .project p {
   font-size: 1.3rem;
   color: var(--color-dark);
   padding: 2rem 2rem;
 }
 
-main .projects .project .p2 span{
+main .projects .project .p2 span {
   color: var(--color-success);
 }
 
-main .projects .project .p3 span{
+main .projects .project .p3 span {
   color: var(--color-primary);
 }
 
@@ -523,6 +533,19 @@ main .contact h1 {
   color: var(--color-danger);
   font-size: 12px;
   margin-top: 5px;
+}
+
+.form-message-send {
+  color: var(--color-success);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-dark);
 }
 
 /* ================= MEDIA QUERIES ======================= */
@@ -674,7 +697,7 @@ main .contact h1 {
     height: 280px;
   }
 
-  main .projects .project{
+  main .projects .project {
     width: 700px;
     grid-template-columns: 1fr;
     gap: 2rem;
